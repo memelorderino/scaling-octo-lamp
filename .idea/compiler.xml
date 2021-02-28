@@ -21,7 +21,9 @@
         <module name="public.ExtUtils.main" />
         <module name="public.AutoPrayFlick.main" />
         <module name="public.Anonymizer.main" />
+        <module name="public.bettermlm.main" />
       </profile>
     </annotationProcessing>
+    <bytecodeTargetLevel target="11" />
   </component>
 </project>
