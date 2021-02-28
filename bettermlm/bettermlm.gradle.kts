@@ -24,7 +24,7 @@
  * SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
  */
 
-version = "6.1.2"
+version = "6.1.3"
 
 project.extra["PluginName"] = "BetterMLM"
 project.extra["PluginDescription"] = "MLM plugin quality of life updates like better afk notification"
@@ -41,6 +41,7 @@ tasks {
                     "Plugin-Version" to project.version,
                     "Plugin-Id" to nameToId(project.extra["PluginName"] as String),
                     "Plugin-Provider" to project.extra["PluginProvider"],
+                    "Plugin-Dependencies" to nameToId("extutils"),
                     "Plugin-Description" to project.extra["PluginDescription"],
                     "Plugin-License" to project.extra["PluginLicense"]
                 )
