@@ -55,6 +55,13 @@
         "version": "6.1.1",
         "url": "https://github.com/memelorderino/scaling-octo-lamp/blob/master/release/bettermlm-6.1.1.jar?raw=true",
         "requires": "^1.0.0"
+      },
+      {
+        "date": "2021-02-28",
+        "sha512sum": "690F0D5A7B3436A47A599A885A152F2F49D301D5F459D14CADB69127641B289F110DA2CC6BD3E94F7013779BF0303EE8E16C7CA3778CC56397FF187B56FEFE14",
+        "version": "6.1.2",
+        "url": "https://github.com/memelorderino/scaling-octo-lamp/blob/master/release/bettermlm-6.1.2.jar?raw=true",
+        "requires": "^1.0.0"
       }
     ]
   },
