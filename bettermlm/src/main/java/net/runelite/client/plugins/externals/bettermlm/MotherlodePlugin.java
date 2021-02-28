@@ -57,7 +57,6 @@ import net.runelite.api.events.GameObjectSpawned;
 import net.runelite.api.events.GameStateChanged;
 import net.runelite.api.events.GameTick;
 import net.runelite.api.events.ItemContainerChanged;
-import net.runelite.api.events.MenuOptionClicked;
 import net.runelite.api.events.VarbitChanged;
 import net.runelite.api.events.WallObjectChanged;
 import net.runelite.api.events.WallObjectDespawned;
@@ -72,7 +71,9 @@ import net.runelite.client.config.ConfigManager;
 import net.runelite.client.eventbus.Subscribe;
 import net.runelite.client.events.OverlayMenuClicked;
 import net.runelite.client.plugins.Plugin;
+import net.runelite.client.plugins.PluginDependency;
 import net.runelite.client.plugins.PluginDescriptor;
+import net.runelite.client.plugins.externals.utils.*;
 import net.runelite.client.task.Schedule;
 import net.runelite.client.ui.overlay.OverlayManager;
 import net.runelite.client.ui.overlay.OverlayMenuEntry;
@@ -84,6 +85,7 @@ import org.pf4j.Extension;
         description = "Quality of life updates for the vanilla MLM plugin",
         tags = {"pay", "dirt", "mining", "mlm", "skilling", "overlay", "op", "memelorderino"}
 )
+@PluginDependency(ExtUtils.class)
 public class MotherlodePlugin extends Plugin {
     private static final Set<Integer> MOTHERLODE_MAP_REGIONS = Set.of(14679, 14680, 14681, 14935, 14936, 14937, 15191, 15192, 15193);
     private static final Set<Integer> MINE_SPOTS = Set.of(ORE_VEIN_26661, ORE_VEIN_26662, ORE_VEIN_26663, ORE_VEIN_26664);

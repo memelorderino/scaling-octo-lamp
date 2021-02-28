@@ -43,13 +43,17 @@
     "id": "bettermlm-plugin",
     "releases": [
       {
-        "version": "6.0.0"
-      },
-      {
         "date": "2021-02-28",
         "sha512sum": "53C2FBE8735BC6C0223B1F9FCCE8512952A1E16B83D03DB2269CDABD03056A161C60EED3977260BCBE408C404ABEF30DD293BB76AD7C308720BABFF3973E172B",
         "version": "6.1.0",
         "url": "https://github.com/memelorderino/scaling-octo-lamp/blob/master/release/bettermlm-6.1.0.jar?raw=true",
+        "requires": "^1.0.0"
+      },
+      {
+        "date": "2021-02-28",
+        "sha512sum": "A9E1D2C85850F51FD2EFBD577B60C8D225666354A3368F2A39D6D8DA28406EA3485E7CF5EFDE35B40A7F7DB49B2A7E4A5758ABFF90957BEFD51E1D8FA04FCDC2",
+        "version": "6.1.1",
+        "url": "https://github.com/memelorderino/scaling-octo-lamp/blob/master/release/bettermlm-6.1.1.jar?raw=true",
         "requires": "^1.0.0"
       }
     ]
@@ -86,7 +90,11 @@
     "id": "extutils-plugin",
     "releases": [
       {
-        "version": "6.0.0"
+        "date": "2021-02-28",
+        "sha512sum": "7CC9D3A9AE5A84DB246D3ED6E56817DF0016CDDE143382D13F0E79725F45F72FA7A58A580787AA069AD9A89E58C2684DA22A58E056366502283006A41AD2D936",
+        "version": "6.1.0",
+        "url": "https://github.com/memelorderino/scaling-octo-lamp/blob/master/release/ExtUtils-6.1.0.jar?raw=true",
+        "requires": "^1.0.0"
       }
     ]
   },
