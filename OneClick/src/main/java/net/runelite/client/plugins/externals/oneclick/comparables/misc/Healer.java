@@ -1,4 +1,4 @@
-package net.runelite.client.plugins.externals.oneclick.Comparables.misc;
+package net.runelite.client.plugins.externals.oneclick.comparables.misc;
 
 import com.google.common.collect.ImmutableMap;
 import lombok.Setter;

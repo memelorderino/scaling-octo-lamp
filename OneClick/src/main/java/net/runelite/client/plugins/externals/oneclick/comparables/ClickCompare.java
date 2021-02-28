@@ -1,4 +1,4 @@
-package net.runelite.client.plugins.externals.oneclick.Comparables;
+package net.runelite.client.plugins.externals.oneclick.comparables;
 
 import java.util.Collection;
 import java.util.HashMap;

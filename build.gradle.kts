@@ -17,7 +17,7 @@ subprojects {
     group = "com.openosrs.externals"
 
     project.extra["PluginProvider"] = "memelorderino"
-    project.extra["ProjectUrl"] = "https://github.com"
+    project.extra["ProjectUrl"] = "https://github.com/memelorderino/scaling-octo-lamp"
     project.extra["PluginLicense"] = "GNU General Public License v3.0"
 
     repositories {
