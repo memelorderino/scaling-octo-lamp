@@ -1,1 +1,92 @@
-[{}]
+[
+  {
+    "projectUrl": "https://github.com/memelorderino/scaling-octo-lamp",
+    "provider": "memelorderino",
+    "name": "Anonymizer",
+    "description": "Anonymizes your rsn and others.",
+    "id": "anonymizer-plugin",
+    "releases": [
+    ]
+  },
+  {
+    "projectUrl": "https://github.com/memelorderino/scaling-octo-lamp",
+    "provider": "memelorderino",
+    "name": "AutoClicker",
+    "description": "What more is there to say?",
+    "id": "autoclicker-plugin",
+    "releases": [
+    ]
+  },
+  {
+    "projectUrl": "https://github.com/memelorderino/scaling-octo-lamp",
+    "provider": "memelorderino",
+    "name": "AutoPrayFlick",
+    "description": "Use plugin in PvP situations for best results.",
+    "id": "autoprayflick-plugin",
+    "releases": [
+    ]
+  },
+  {
+    "projectUrl": "https://github.com/memelorderino/scaling-octo-lamp",
+    "provider": "memelorderino",
+    "name": "BasicBossSwapper",
+    "description": "Does stuff and things.",
+    "id": "basicbossswapper-plugin",
+    "releases": [
+    ]
+  },
+  {
+    "projectUrl": "https://github.com/memelorderino/scaling-octo-lamp",
+    "provider": "memelorderino",
+    "name": "CustomSwapper",
+    "description": "Use plugin in PvP situations for best results.",
+    "id": "customswapper-plugin",
+    "releases": [
+    ]
+  },
+  {
+    "projectUrl": "https://github.com/memelorderino/scaling-octo-lamp",
+    "provider": "memelorderino",
+    "name": "ExtUtils",
+    "description": "Utils required for plugins to function.",
+    "id": "extutils-plugin",
+    "releases": [
+    ]
+  },
+  {
+    "projectUrl": "https://github.com/memelorderino/scaling-octo-lamp",
+    "provider": "memelorderino",
+    "name": "ItemDropper",
+    "description": "Drops Items.",
+    "id": "itemdropper-plugin",
+    "releases": [
+    ]
+  },
+  {
+    "projectUrl": "https://github.com/memelorderino/scaling-octo-lamp",
+    "provider": "memelorderino",
+    "name": "LeftClickCast",
+    "description": "Casting made even easier.",
+    "id": "leftclickcast-plugin",
+    "releases": [
+    ]
+  },
+  {
+    "projectUrl": "https://github.com/memelorderino/scaling-octo-lamp",
+    "provider": "memelorderino",
+    "name": "NeverLog",
+    "description": "This makes it so you'll never logout during the 6h period.",
+    "id": "neverlog-plugin",
+    "releases": [
+    ]
+  },
+  {
+    "projectUrl": "https://github.com/memelorderino/scaling-octo-lamp",
+    "provider": "memelorderino",
+    "name": "OneClick",
+    "description": "OP One Click methods.",
+    "id": "oneclick-plugin",
+    "releases": [
+    ]
+  }
+]
