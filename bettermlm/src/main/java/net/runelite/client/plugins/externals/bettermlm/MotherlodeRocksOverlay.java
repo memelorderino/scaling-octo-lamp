@@ -55,7 +55,7 @@ class MotherlodeRocksOverlay extends Overlay
 	private static final int MAX_DISTANCE = 2350;
 
 	private final Client client;
-	private final MotherlodePlugin plugin;
+	private final BetterMLM plugin;
 	private final MotherlodeConfig config;
 
 	private final BufferedImage miningIcon;
@@ -64,7 +64,7 @@ class MotherlodeRocksOverlay extends Overlay
 	private static final Color miningIconNewColor = new Color(0, 150, 0);
 
 	@Inject
-	MotherlodeRocksOverlay(final Client client, final MotherlodePlugin plugin, final MotherlodeConfig config, final SkillIconManager iconManager)
+	MotherlodeRocksOverlay(final Client client, final BetterMLM plugin, final MotherlodeConfig config, final SkillIconManager iconManager)
 	{
 		setPosition(OverlayPosition.DYNAMIC);
 		setLayer(OverlayLayer.ABOVE_SCENE);

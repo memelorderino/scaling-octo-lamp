@@ -35,12 +35,12 @@ import net.runelite.client.ui.overlay.components.TitleComponent;
 
 public class MotherlodeOreOverlay extends OverlayPanel
 {
-	private final MotherlodePlugin plugin;
+	private final BetterMLM plugin;
 	private final MotherlodeConfig config;
 	private final MotherlodeSession motherlodeSession;
 
 	@Inject
-	MotherlodeOreOverlay(final MotherlodePlugin plugin, final MotherlodeConfig config, final MotherlodeSession motherlodeSession)
+	MotherlodeOreOverlay(final BetterMLM plugin, final MotherlodeConfig config, final MotherlodeSession motherlodeSession)
 	{
 		setPosition(OverlayPosition.TOP_LEFT);
 		this.plugin = plugin;

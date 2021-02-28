@@ -40,14 +40,14 @@ import net.runelite.client.ui.overlay.components.LineComponent;
 import net.runelite.client.ui.overlay.components.TitleComponent;
 
 class MotherlodeOverlay extends OverlayPanel {
-    private final MotherlodePlugin plugin;
+    private final BetterMLM plugin;
     private final MotherlodeConfig config;
     private final MotherlodeSession motherlodeSession;
 
     static final String MINING_RESET = "Reset";
 
     @Inject
-    MotherlodeOverlay(final MotherlodePlugin plugin, final MotherlodeConfig config, final MotherlodeSession motherlodeSession) {
+    MotherlodeOverlay(final BetterMLM plugin, final MotherlodeConfig config, final MotherlodeSession motherlodeSession) {
         super(plugin);
         setPosition(OverlayPosition.TOP_LEFT);
         this.plugin = plugin;

@@ -87,7 +87,7 @@ import org.pf4j.Extension;
         tags = {"pay", "dirt", "mining", "mlm", "skilling", "overlay", "op", "memelorderino"}
 )
 @PluginDependency(ExtUtils.class)
-public class MotherlodePlugin extends Plugin {
+public class BetterMLM extends Plugin {
     private static final Set<Integer> MOTHERLODE_MAP_REGIONS = Set.of(14679, 14680, 14681, 14935, 14936, 14937, 15191, 15192, 15193);
     private static final Set<Integer> MINE_SPOTS = Set.of(ORE_VEIN_26661, ORE_VEIN_26662, ORE_VEIN_26663, ORE_VEIN_26664);
     private static final Set<Integer> DEPLETED_SPOTS = Set.of(DEPLETED_VEIN_26665, DEPLETED_VEIN_26666, DEPLETED_VEIN_26667, DEPLETED_VEIN_26668);

@@ -27,7 +27,7 @@ package net.runelite.client.plugins.externals.bettermlm;
 
 import net.runelite.client.config.*;
 
-@ConfigGroup("motherlode")
+@ConfigGroup("bettermlm")
 public interface MotherlodeConfig extends Config
 {
 	@ConfigSection(

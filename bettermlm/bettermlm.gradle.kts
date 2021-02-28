@@ -24,7 +24,7 @@
  * SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
  */
 
-version = "6.1.3"
+version = "6.1.4"
 
 project.extra["PluginName"] = "BetterMLM"
 project.extra["PluginDescription"] = "MLM plugin quality of life updates like better afk notification"

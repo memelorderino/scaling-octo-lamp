@@ -47,17 +47,16 @@ import net.runelite.client.ui.overlay.OverlayPanel;
 import net.runelite.client.ui.overlay.OverlayPosition;
 import net.runelite.client.ui.overlay.components.ComponentConstants;
 import net.runelite.client.ui.overlay.components.LineComponent;
-import net.runelite.client.util.ColorUtil;
 
 @Singleton
 class MotherlodeSackOverlay extends OverlayPanel {
     private static final Color DANGER = new Color(150, 0, 0, 150);
     private final Client client;
-    private final MotherlodePlugin plugin;
+    private final BetterMLM plugin;
     private final MotherlodeConfig config;
 
     @Inject
-    MotherlodeSackOverlay(final Client client, final MotherlodePlugin plugin, final MotherlodeConfig config) {
+    MotherlodeSackOverlay(final Client client, final BetterMLM plugin, final MotherlodeConfig config) {
         super(plugin);
         setPosition(OverlayPosition.TOP_LEFT);
         this.client = client;
