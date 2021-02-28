@@ -39,11 +39,18 @@
     "projectUrl": "https://github.com/memelorderino/scaling-octo-lamp",
     "provider": "memelorderino",
     "name": "BetterMLM",
-    "description": "QOL updates for the runelite mlm plugin.",
+    "description": "MLM plugin quality of life updates like better afk notification",
     "id": "bettermlm-plugin",
     "releases": [
       {
         "version": "6.0.0"
+      },
+      {
+        "date": "2021-02-28",
+        "sha512sum": "53C2FBE8735BC6C0223B1F9FCCE8512952A1E16B83D03DB2269CDABD03056A161C60EED3977260BCBE408C404ABEF30DD293BB76AD7C308720BABFF3973E172B",
+        "version": "6.1.0",
+        "url": "https://github.com/memelorderino/scaling-octo-lamp/blob/master/release/bettermlm-6.1.0.jar?raw=true",
+        "requires": "^1.0.0"
       }
     ]
   },

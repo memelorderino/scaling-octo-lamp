@@ -44,6 +44,9 @@ open class BootstrapTask : DefaultTask() {
             val bootstrapDir = File("${project.buildDir}/bootstrap")
             val bootstrapReleaseDir = File("${project.buildDir}/bootstrap/release")
 
+            project.logger.lifecycle(bootstrapDir.toString())
+            project.logger.lifecycle(bootstrapReleaseDir.toString())
+
             bootstrapDir.mkdirs()
             bootstrapReleaseDir.mkdirs()
 
@@ -112,7 +115,9 @@ open class BootstrapTask : DefaultTask() {
                 }
             }
 
-            File(bootstrapDir, "plugins.json").printWriter().use { out ->
+            project.logger.lifecycle(plugins.toString())
+
+            File(project.rootDir, "plugins.json").printWriter().use { out ->
                 out.println(plugins.toString())
             }
         }
