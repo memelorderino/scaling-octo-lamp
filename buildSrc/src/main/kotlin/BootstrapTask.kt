@@ -22,7 +22,8 @@ open class BootstrapTask : DefaultTask() {
     }
 
     private fun hash(file: ByteArray): String {
-        return MessageDigest.getInstance("SHA-512").digest(file).fold("", { str, it -> str + "%02x".format(it) }).toUpperCase()
+        return MessageDigest.getInstance("SHA-512").digest(file).fold("", { str, it -> str + "%02x".format(it) })
+            .toUpperCase()
     }
 
     private fun getBootstrap(): JSONArray? {
@@ -30,10 +31,11 @@ open class BootstrapTask : DefaultTask() {
 
         val url = "https://raw.githubusercontent.com/memelorderino/scaling-octo-lamp/master/plugins.json"
         val request = Request.Builder()
-                .url(url)
-                .build()
+            .url(url)
+            .build()
 
-        client.newCall(request).execute().use { response -> return JSONObject("{\"plugins\":${response.body!!.string()}}").getJSONArray("plugins") }
+        client.newCall(request).execute()
+            .use { response -> return JSONObject("{\"plugins\":${response.body!!.string()}}").getJSONArray("plugins") }
     }
 
     @TaskAction
@@ -55,21 +57,23 @@ open class BootstrapTask : DefaultTask() {
 
                     val releases = ArrayList<JsonBuilder>()
 
-                    releases.add(JsonBuilder(
+                    releases.add(
+                        JsonBuilder(
                             "version" to it.project.version,
                             "requires" to ProjectVersions.apiVersion,
                             "date" to formatDate(Date()),
                             "url" to "https://github.com/memelorderino/scaling-octo-lamp/blob/master/release/${it.project.name}-${it.project.version}.jar?raw=true",
                             "sha512sum" to hash(plugin.readBytes())
-                    ))
+                        )
+                    )
 
                     val pluginObject = JsonBuilder(
-                            "name" to it.project.extra.get("PluginName"),
-                            "id" to nameToId(it.project.extra.get("PluginName") as String),
-                            "description" to it.project.extra.get("PluginDescription"),
-                            "provider" to it.project.extra.get("PluginProvider"),
-                            "projectUrl" to it.project.extra.get("ProjectUrl"),
-                            "releases" to releases.toTypedArray()
+                        "name" to it.project.extra.get("PluginName"),
+                        "id" to nameToId(it.project.extra.get("PluginName") as String),
+                        "description" to it.project.extra.get("PluginDescription"),
+                        "provider" to it.project.extra.get("PluginProvider"),
+                        "projectUrl" to it.project.extra.get("ProjectUrl"),
+                        "releases" to releases.toTypedArray()
                     ).jsonObject()
 
                     for (i in 0 until baseBootstrap.length()) {
@@ -85,7 +89,12 @@ open class BootstrapTask : DefaultTask() {
                             break
                         }
 
-                        plugins.add(JsonMerger(arrayMergeMode = JsonMerger.ArrayMergeMode.MERGE_ARRAY).merge(item, pluginObject))
+                        plugins.add(
+                            JsonMerger(arrayMergeMode = JsonMerger.ArrayMergeMode.MERGE_ARRAY).merge(
+                                item,
+                                pluginObject
+                            )
+                        )
                         pluginAdded = true
                     }
 
@@ -93,7 +102,13 @@ open class BootstrapTask : DefaultTask() {
                         plugins.add(pluginObject)
                     }
 
-                    plugin.copyTo(Paths.get(bootstrapReleaseDir.toString(), "${it.project.name}-${it.project.version}.jar").toFile())
+                    plugin.copyTo(
+                        Paths.get(
+                            bootstrapReleaseDir.toString(),
+                            "${it.project.name}-${it.project.version}.jar"
+                        ).toFile()
+                        , overwrite = true
+                    )
                 }
             }
 
